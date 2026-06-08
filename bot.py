@@ -263,12 +263,6 @@ async def download_stories_cb(client, callback_query):
         await callback_query.message.reply_text("❌ Xatolik yuz berdi.")
 
 # ===================== MAIN =====================
-async def main():
-    log.info("StoryBot ishga tushdi!")
-    await bot.start()
-    log.info("Bot started!")
-    await asyncio.Event().wait()
-    await bot.stop()
-
 if __name__ == "__main__":
-    asyncio.run(main())
+    log.info("StoryBot ishga tushdi!")
+    bot.run()
